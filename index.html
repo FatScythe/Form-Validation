@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Form Validation</title>
+</head>
+<body>
+
+	<main>
+		<div class="container">
+			<form>
+				<img src="Paper plane .jpg" alt="telegram">
+
+				<div class="input-group">
+					<label for="fullname">Full Name:</label>
+					<input type="text" name="fname" placeholder="Enter your fullname" id="fullname" onkeyup="validateFname()">
+					<span class="fname-error"></span>	
+				</div>
+
+				<div class="input-group">
+					<label for="phone">Phone no:</label>
+					<input type="text" name="pnumber" placeholder="0123 456 7890" onkeyup="validatePhone()" id="number">	
+					<span class="phone-error"></span>	
+				</div>
+
+				<div class="input-group">
+					<label for="email">Email:</label>
+					<input type="text" name="email" placeholder="Enter your email" id="email" onkeyup="validateEmail()">	
+					<span class="email-error"></span>	
+				</div>
+
+				<div class="input-group">
+					<label for="Message">Message:</label>
+					<textarea rows="5" placeholder="Enter your message" onkeyup="validateMessage()" id="msg"></textarea>	
+					<span class="message-error"></span>	
+				</div>
+				
+				<button>Submit</button>
+				<span class="button-error"></span>
+
+			</form>
+
+		</div>
+	</main>
+
+	<aside>
+			<div class="wrapper">
+				
+				<div class="content">
+
+				<img class="cancel" src="close.png" alt="close key"><br>
+				<h2>The Weekend Sale</h2>	
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco</p><br><br>
+				<button>Learn More...</button>
+
+				</div>
+				
+			</div>
+	</aside>
+
+
+	<script src="app.js"></script>
+</body>
+</html>

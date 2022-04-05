@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body {
+	position: relative;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	background: #0a2342;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container form {
+ 	width: 80%;
+ 	max-width: 500px;
+ 	border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+ 	position: relative;
+ 	background: #fffdf7;
+ 	padding: 35px 25px;
+ 	padding-bottom: 80px;
+}
+
+.container form img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.container form .input-group {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+
+.container form .input-group label {
+	margin-right: 15px;
+	flex-basis: 28%;
+}
+
+.container form .input-group input, .container form .input-group textarea {
+	flex-basis: 68%;
+	margin: 0 20px;
+	padding: 10px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	display: inline-block;
+	width: 90%;
+	font-size: 16px;
+	border-bottom: 2px solid #999;
+	resize: vertical;
+}
+
+::placeholder {
+	color: #ccc;
+	font-size: 14px;
+}
+
+.container form button {
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	outline: none;
+	border: 0;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 1);
+	background: #2ca58d;
+	font-size: 18px;
+	color: #fff;
+	padding: 15px 35px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.container form .input-group span, .button-error {
+	color: crimson;
+	font-size: 13px;
+	font-weight: bold;
+	position: absolute;
+	right: 60px;
+}
+
+.input-group span img {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+}
+
+
+div.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	display: none;
+}
+
+div.content {
+	margin: 30% auto;
+	width: 90%;
+	max-width: 300px;
+	background: #eee;
+	padding: 10px;
+}
+
+.content img {
+	float: right;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.content h2 {
+	text-align: center;
+	margin: 10px;
+}
+
+.content button {
+	display: block;
+	background: limegreen;
+	color: #fff;
+	border: none;
+	padding: 6px 10px;
+	margin: 0px auto;
+	/*font-size: 25px;*/
+	border-radius: 5%;	
+}
