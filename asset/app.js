@@ -28,7 +28,7 @@ function validateFname(){
 		return false;
 	}
 
-	nameError.innerHTML = `<img src="done.png" alt="done">`;
+	nameError.innerHTML = `<img src="asset/done.png" alt="done">`;
 	return true;	
 } 
 
@@ -46,7 +46,7 @@ function validatePhone() {
 		return false;
 	}
 
-	phoneError.innerHTML = `<img src="done.png" alt="done">`;
+	phoneError.innerHTML = `<img src="asset/done.png" alt="done">`;
 	return true;
 }
 
@@ -64,7 +64,7 @@ function validateEmail() {
 		return false;
 	}
 
-	emailError.innerHTML = `<img src="done.png" alt="done">`;
+	emailError.innerHTML = `<img src="asset/done.png" alt="done">`;
 	return true;
 }
 
@@ -77,7 +77,7 @@ function validateMessage() {
 		messageError.textContent = `${left} more characters required`;
 		return false;	
 	}
-	messageError.innerHTML = `<img src="done.png" alt="done">`;
+	messageError.innerHTML = `<img src="asset/done.png" alt="done">`;
 	return true;
 
 
